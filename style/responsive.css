@@ -1,0 +1,12 @@
+@media screen and (max-width: 600px) {
+    #header{
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .header-middle, .menu-icon{
+        display: none;
+    }
+}
