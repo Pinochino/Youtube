@@ -1,4 +1,7 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+    .content{
+        overflow: hidden;
+    }
     #header{
         overflow: hidden;
         display: flex;
@@ -9,4 +12,92 @@
     .header-middle, .menu-icon{
         display: none;
     }
+
+    .body-aside{
+        display: none;
+    }
+    .item-body{
+        padding: 0;
+        margin-top: 0.7rem;
+    }
+    .cirle-logo{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1rem;
+    }
+
+    .container{
+        grid-auto-rows: 14rem;
+    }
+    .item-body-content h3{
+        font-size: 1rem;
+        
+    }
 }
+
+@media screen and (max-width: 912px) {
+    #header{
+        padding: 0 0.6rem;
+    }
+    #body{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 8rem;
+    }
+    .mode-item {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 1.5rem 0;
+        width: 5.5rem;
+    }
+    .body-aside{
+        padding: 0.3rem;
+        flex: 0.08;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 0.5rem;
+    }
+    .body-content > *{
+        padding: 0 1rem;
+    }
+    .body-content{
+        width: 100%;
+    }
+
+    .categories{
+        height: 3rem;
+        display: flex;
+    }
+
+    .categories > *{
+        padding: 0.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: fit-content;
+    }
+
+    .categories > *:last-child{
+        display: none;
+    }
+    .mode>.mode-item span{
+        font-size: 0.8rem;
+    }
+
+    .mode>.mode-item:hover {
+        background-color: #E0E0E0;
+        height: 10px;
+    }
+
+    .mode{
+        border: none;
+    }
+    .mode-2, .mode-3{
+        display: none;
+    }
+}
+
