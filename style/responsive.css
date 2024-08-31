@@ -81,9 +81,6 @@
         min-width: fit-content;
     }
 
-    .categories > *:last-child{
-        display: none;
-    }
     .mode>.mode-item span{
         font-size: 0.8rem;
     }

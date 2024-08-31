@@ -1,0 +1,127 @@
+#body-product {
+    margin-top: 1rem;
+    background-color: red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper-body {
+    width: 1250px;
+    background: green;
+    display: flex;
+}
+
+.video {
+    background: blue;
+}
+
+.video-left {
+    flex: 1;
+    background: yellow;
+}
+
+.video-left>* {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+iframe {
+    border: none;
+    border-radius: 15px;
+    padding-right: 24px;
+}
+
+.chips {
+    height: 48px;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+}
+
+.chips>.category-button {
+    padding: 0 11px;
+}
+
+.detail {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.detail-content {
+    flex: 1;
+    padding: 8px;
+}
+
+.detail-content-head {
+    display: flex;
+    align-items: center;
+}
+
+.detail-content-head button {
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.detail-content-head h3 {
+    font-size: 0.8rem;
+}
+
+.detail-content p {
+    font-size: 0.8rem;
+}
+
+.detail img {
+    height: 94px;
+    width: 168px;
+    margin: 8px 8px 8px 0px;
+    border-radius: 10px;
+}
+
+.short-head {
+    display: flex;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.short-video {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.short-head>.short-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.card>img {
+    width: 131px;
+    height: 239px;
+    border-radius: 12px;
+}
+
+.short-video {
+    position: relative;
+}
+
+.short-button {
+    position: absolute;
+    right: 0;
+    top: 28%;
+    transform: translateX(50%);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.short-button:hover {
+    background: #888;
+}

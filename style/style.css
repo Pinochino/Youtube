@@ -22,9 +22,11 @@ body {
     --background-hover: #888;
     --yt-spec-text-primary: #0f0f0f;
 }
+
 a {
     color: #000;
 }
+
 #header {
     height: 4.5rem;
     background-color: #fff;
@@ -156,14 +158,14 @@ a {
 .body-aside {
     padding: 1.2rem;
     display: block;
-    background: transparent; 
+    background: transparent;
     overflow-y: hidden;
     overflow-x: hidden;
 }
 
-.body-aside:hover{
+.body-aside:hover {
     overflow-y: scroll;
-    transition: overflow-y 0.3s ease; 
+    transition: overflow-y 0.3s ease;
 }
 
 .mode>.mode-item:last-child {
@@ -259,7 +261,7 @@ a {
     align-items: center;
 }
 
-.categories{
+.categories {
     height: 5.6rem;
     width: 100%;
     background: #fff;
@@ -268,19 +270,22 @@ a {
     padding: 0 2.4rem;
 }
 
-.categories > *:first-child{
+.categories>*.active {
     background-color: #0f0f0f;
     color: #fff;
 }
-.categories > *{
+
+.category-button {
     padding: 0 12px;
     outline: none;
     border: none;
     height: 2rem;
     border-radius: 10px;
-    transition: background-color .5s cubic-bezier(.05,0,0,1);
+    transition: background-color .5s cubic-bezier(.05, 0, 0, 1);
     margin-right: 1.2rem;
 }
+
+
 
 /* // Scrollbar CSS */
 html *::-webkit-scrollbar {
@@ -299,18 +304,39 @@ html *::-webkit-scrollbar-track {
 }
 
 
-.body-content > *{
+.body-content>* {
     padding: 0 2.4rem;
 }
 
 /* BODY */
-.container{
+
+
+.container {
+    display: none;
+    animation: moving .5s ease;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.container.active {
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    grid-auto-rows: 20rem; 
+    grid-auto-rows: 20rem;
     gap: 2rem;
 }
+
+
 
 .item {
     background: #fff;
@@ -319,7 +345,7 @@ html *::-webkit-scrollbar-track {
     flex-direction: column;
 }
 
-.item-image{
+.item-image {
     object-fit: cover;
     width: 100%;
     max-height: 100%;
@@ -329,40 +355,43 @@ html *::-webkit-scrollbar-track {
 
 
 
-.cirle-logo{
+.cirle-logo {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
     margin-right: 1.5rem;
 }
 
-.item-body{
+.item-body {
     margin-top: 1rem;
     display: inline-flex;
     width: 100%;
     padding: 0 1.2rem;
 }
 
-.item-body-content h3{
+.item-body-content h3 {
     font-weight: 500;
     font-size: 1.1rem;
     line-height: 1rem;
 }
-.item-body-content{
+
+.item-body-content {
     flex: 1;
 }
+
 .item-content-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.item-content-head button{
+
+.item-content-head button {
     outline: none;
     background: transparent;
     border: none;
 }
 
-.time-video{
+.time-video {
     position: absolute;
     top: 90%;
     background-color: #060A36;
@@ -372,7 +401,7 @@ html *::-webkit-scrollbar-track {
     right: 1rem;
     z-index: 1000;
 }
-.block-image{
+
+.block-image {
     position: relative;
 }
-
