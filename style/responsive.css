@@ -1,79 +1,299 @@
-@media screen and (max-width: 500px) {
-    .content{
+/* WIDTH: 344PX */
+@media only screen and (width: 344px) {
+    .detail > img {
+        width: 9rem;
+    }
+    .short-head{
+        padding: 0 1rem;
+    }
+    .wrapper .carousel {
+        justify-content: none;
+    }
+    .carousel i {
+        display: none;
+    }
+}
+
+/* WIDTH: 360X */
+@media only screen and (width: 360px) {
+    .wrapper .carousel {
+    max-width: 22rem;
+    }
+}
+
+
+
+/* MIN-WIDTH: 344PX -> MAX-WIDTH:500PX */
+@media screen and (min-width: 344px) and (max-width: 500px) {
+    #body-product{
         overflow: hidden;
     }
-    #header{
+    iframe {
+        width: 95%;
+        height: 16rem;
+        object-fit: cover ;
+    }
+    .content {
+        overflow: hidden;
+    }
+
+    #header {
         overflow: hidden;
         display: flex;
         justify-content: space-between;
         padding: 0;
     }
 
-    .header-middle, .menu-icon{
+    .header-middle,
+    .menu-icon {
         display: none;
     }
 
-    .body-aside{
+    .body-aside {
         display: none;
     }
-    .item-body{
+
+    .item-body {
         padding: 0;
         margin-top: 0.7rem;
     }
-    .cirle-logo{
+
+    .cirle-logo {
         width: 1.5rem;
         height: 1.5rem;
         margin-right: 1rem;
     }
 
-    .container{
+    .container {
         grid-auto-rows: 14rem;
     }
-    .item-body-content h3{
+
+    .item-body-content h3 {
         font-size: 1rem;
-        
+    }
+
+    .emotion .like::before {
+        height: 1.5rem;
+    }
+
+    .emotion .like{
+        display: flex;
+        align-items: center;
+    }
+    .mode-channel > * {
+        height: 1.5rem;
+        margin: 0 0.01991rem;
+        text-align: center;
+     }
+     
+     .card img {
+    width: 7.5rem; 
+    height: 12rem;
+    }
+
+
+    .wrapper .carousel {
+        justify-content: center;
+    }
+   
+    .carousel {
+    max-width: 22.5rem;
+    }
+    .wrapper-video {
+    padding: 0 0.9rem;
+    }
+    .comment {
+        width: 90%;
+    }
+    .comment-bottom{
+        width: 118%;
+    }
+    .video-heading {
+        font-size: 0.8rem;
+        padding: 0 1rem;
+     }
+   .category-button{
+    margin-right: 0;
+   }
+    .chips{
+        justify-content: space-around;
+    }
+    .response, .emotion, .share, .upload > *{
+        font-size: 0.4rem;
+        padding: 0 0.15rem;
+    }
+    .wrapper-video .channel{
+        flex: 0.7888888;
+        justify-content: unset;
+    }
+    .mode-channel{
+        justify-content: space-around;
+    flex: 1;
+    }
+    .comment-bottom .channel{
+        flex: 0.777;
+        width: 0;
+    }
+
+    .wrapper i {
+    font-size: 1rem;
+    }
+    .carousel > .card{
+        width: calc(100% / 3);
+    }
+    .comment-head{
+        font-size: 0.8rem;
+    }
+
+    .wrapper-body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .detail-content {
+        flex: none;
+        padding: 0;
+    }
+    .detail img {
+    margin: 0;
+    }
+   
+
+    .detail {
+        justify-content: center;
+    }
+    .detail > *:first-child{
+        margin: 0 0.5rem;
+    }
+
+    iframe {
+        width: 95%;
+        height: 16rem;
+        object-fit: cover ;
+    }
+     .video{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+     }
+     
+     .description{  
+        font-size: 0.8rem;
+    padding: 1rem;
+    margin: 0 1rem;
+     }
+     .channel > *:not(:last-child){
+        margin: 0 0.4rem;
+     }
+
+     .wrapper-video{
+        flex-wrap: wrap;
+        align-items: center;
+        /* flex-direction: column; */
+     }
+     .comment-bottom{
+        display: flex;
+        justify-content: center;
+     }
+     
+     .channel .cirle-logo{
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.9rem
+     }
+     .wrapper-video  > * {
+        margin: 0.3rem 0;
+     }
+     .comment-bottom .channel > * {
+        padding: 0;
+    }
+    .like::before{
+        height: 1rem;
+        top: 0;
+    }
+    .channel .cirle-logo {
+    margin: 0;
+    }
+
+    .channel-content h4 {
+        font-size: 0.6777rem;
+    }
+
+    .channel .category-button {
+    font-size: 0.45rem;
+    padding: 0 0.5rem;
+    }
+    .comment-bottom .channel{
+        justify-content: center;
+    }
+    .channel-content p {
+        font-size: 0.455rem;
+    }
+    .channel{
+        align-items: center;
+    }
+    .category-button{
+        height: 1.5rem !important;
+    }
+    .wrapper-video{
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 912px) {
+
+
+/* MIN-WIDTH:768PX -> MAX-WIDTH: 912PX */
+@media screen and (min-width: 768px) and (max-width: 912px) {
     #header{
-        padding: 0 0.6rem;
+        padding: 0 0.7rem;
     }
-    #body{
+    
+    #body-product{
+        overflow: hidden;
+    }
+
+    #body {
         justify-content: space-between;
     }
-    .logo{
+
+    .logo {
         width: 8rem;
     }
+
     .mode-item {
         flex-wrap: wrap;
         padding: 0;
         margin: 1.5rem 0;
         width: 5.5rem;
     }
-    .body-aside{
+
+    .body-aside {
         padding: 0.3rem;
         flex: 0.08;
     }
 
-    .container{
+    .container {
         display: grid;
         grid-template-columns: repeat(2, auto);
         gap: 0.5rem;
     }
-    .body-content > *{
+
+    .body-content>* {
         padding: 0 1rem;
+        /* top: -0; */
     }
-    .body-content{
+
+    .body-content {
         width: 100%;
     }
 
-    .categories{
+    .categories {
         height: 3rem;
         display: flex;
     }
 
-    .categories > *{
+    .categories>* {
         padding: 0.3rem;
         display: flex;
         justify-content: center;
@@ -81,7 +301,7 @@
         min-width: fit-content;
     }
 
-    .mode>.mode-item span{
+    .mode>.mode-item span {
         font-size: 0.8rem;
     }
 
@@ -90,11 +310,141 @@
         height: 10px;
     }
 
-    .mode{
+    .mode {
         border: none;
     }
-    .mode-2, .mode-3{
+
+    .mode-2,
+    .mode-3 {
         display: none;
     }
-}
 
+    .wrapper-body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .detail-content {
+        flex: none;
+        padding: 0;
+    }
+    .detail img {
+    margin: 0;
+    }
+
+    .detail > *:first-child{
+        margin-right:  0.5rem;
+    }
+
+    iframe {
+        width: 95%;
+        object-fit: cover ;
+    }
+     .video{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+     }
+     
+     .description{  
+        font-size: 0.8rem;
+    padding: 1rem;
+    margin: 0 1rem;
+     }
+     .channel > *{
+        margin: 0 0.4rem;
+     }
+
+     .wrapper-video{
+        flex-wrap: wrap;
+        align-items: center;
+     }
+     .comment-bottom{
+        display: flex;
+        justify-content: center;
+     }
+     
+     .channel .cirle-logo{
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.9rem
+     }
+     .wrapper-video  > * {
+        margin: 0.3rem 0;
+     }
+     .comment-bottom .channel > * {
+        padding: 0;
+    }
+    .like::before{
+        height: 1rem;
+        top: 0;
+    }
+    .channel .cirle-logo {
+    margin: 0;
+    }
+    .video-heading{
+        padding: 0 1rem;
+    }
+
+    .wrapper-video, .description, .comment{
+        width: 96%;
+    }
+    .comment-bottom{
+        display: block;
+        width: 96%;
+    }
+    .wrapper-video .channel{
+        flex: unset;
+    }
+     .wrapper-video .mode-channel{
+        flex: none;
+     }
+     .video-left{
+        flex: none;
+        width: 96%;
+     }
+     .detail-content{
+        flex: 1;
+     }
+     .mode-channel {
+        display: flex;
+        justify-content: space-evenly;
+        flex: 0.8;
+    }
+    
+    .header-middle > *{
+        margin: 0 0.3rem;
+    }
+}
+@media only screen and (width: 800px)  {
+    iframe{
+        width: 98%;
+    }
+    .wrapper-body{
+        gap: 0;
+    }
+}
+@media  screen and (width: 1024px)  and (max-width: 1280px) {
+    #header{
+        padding: 0 0.2rem;
+    }
+    #body-product{
+        overflow: hidden;
+    }
+    .wrapper-body{
+        max-width: 100%;
+        padding: 0 0.5rem;
+    }
+    iframe {
+        width: 100%;
+        height: 23rem;
+    }
+    .wrapper-video .channel, .mode-channel{
+        flex: none;
+        align-items: center;
+    }
+    .wrapper-video .channel> *:not(:first-child){
+        margin: 0 0.3rem;
+    }
+}
