@@ -23,7 +23,7 @@ function toggleButtonLogo() {
 }
 
 
-window.addEventListener('load', buttonCategories);
+window.addEventListener('DOMContentLoaded', buttonCategories);
 
 function buttonCategories() {
     const categoriesButton = qsa('.categories .category-button');
@@ -33,30 +33,35 @@ function buttonCategories() {
     const categoriesContentArray = Array.from(categoriesContent);
 
     // Tabs button
-    categoriesButtonArray.forEach((tab, index) => {
-        tab.addEventListener('click', () => {
-            categoriesButtonArray.forEach((tab) => tab.classList.remove('active'))
-            tab.classList.add('active')
 
-            categoriesContentArray.forEach(data => data.classList.remove('active'))
-            categoriesContentArray[index].classList.add('active')
-        })
+
+   categoriesButton.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        categoriesButton.forEach(tab => tab.classList.remove('active'))
+        tab.classList.add('active');
+        
+        categoriesContent.forEach(content => {content.classList.remove('active')})
+        categoriesContent[index].classList.add('active')
     })
+   })
 
 
     // Responsive
     if (window.innerWidth <= 600) {
         const categoriesSubset = categoriesButtonArray.slice(categoriesButtonArray.length - 5, categoriesButtonArray.length);
         categoriesSubset.forEach(data => {
-            data.innerHTML = `<i class='bx bx-chevron-right' style="font-size: 25px; width: 25px; height: 25px; color: black"></i>`;
+            // data.innerHTML = `<i class='bx bx-chevron-right' style="font-size: 25px; width: 25px; height: 25px; color: black"></i>`;
+            data.style.display='none'
         });
-    } else if (window.innerWidth = 912) {
+    } else if (window.innerWidth >= 912) {
         const lastItem = categoriesButtonArray[categoriesButtonArray.length - 1];
         lastItem.innerHTML = `<i class='bx bx-chevron-right' style="font-size: 25px; width: 25px; height: 25px; color: black"></i>`;
     }
+
+   
 }
 
-window.addEventListener('load', Carousel);
+window.addEventListener('DOMContentLoaded', Carousel);
 
 function Carousel() {
     const carousel = document.querySelector('.carousel');
@@ -113,4 +118,34 @@ function Carousel() {
     carousel.addEventListener('touchend', dragStop);
 }
 
+window.addEventListener('DOMContentLoaded', toggleSidebar);
 
+function toggleSidebar () {
+
+    const sidebar = qs('.sidebar')
+    const toggleBtn = qs('#toggle-btn')
+    const contentBody = qs('.body-content')
+    const main = qs('.content')
+    const content = qsa('.container')
+    const navside = qs('#nav-side')
+    const header = qs('#header')
+    const closeBtn = qs('#close-btn')
+
+    toggleBtn.addEventListener('click', () => {
+        if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+            navside.classList.add('positive')
+            // main.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+            closeBtn.addEventListener('click', () => {
+                navside.classList.remove('positive')
+            })
+        } else {
+
+            sidebar.classList.toggle('active');
+            contentBody.classList.toggle('active');
+            content.classList.toggle('active');
+            header.classList.toggle('active');
+        }
+    })
+
+    
+}
