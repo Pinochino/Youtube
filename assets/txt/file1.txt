@@ -1,0 +1,14 @@
+api key: AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns
+
+
+upload id: UUAuUUnT6oDeKwE6v1NGQxug
+
+channel id: UCAuUUnT6oDeKwE6v1NGQxug
+
+url: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns
+
+https://www.youtube.com/watch?v=
+
+
+
+

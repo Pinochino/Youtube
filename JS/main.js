@@ -22,7 +22,7 @@ function toggleButtonLogo() {
     }
 }
 
-
+// Category button
 window.addEventListener('DOMContentLoaded', buttonCategories);
 
 function buttonCategories() {
@@ -34,12 +34,10 @@ function buttonCategories() {
 
     // Tabs button
 
-
    categoriesButton.forEach((tab, index) => {
     tab.addEventListener('click', () => {
         categoriesButton.forEach(tab => tab.classList.remove('active'))
         tab.classList.add('active');
-        
         categoriesContent.forEach(content => {content.classList.remove('active')})
         categoriesContent[index].classList.add('active')
     })
@@ -50,15 +48,19 @@ function buttonCategories() {
     if (window.innerWidth <= 600) {
         const categoriesSubset = categoriesButtonArray.slice(categoriesButtonArray.length - 5, categoriesButtonArray.length);
         categoriesSubset.forEach(data => {
-            // data.innerHTML = `<i class='bx bx-chevron-right' style="font-size: 25px; width: 25px; height: 25px; color: black"></i>`;
+            
             data.style.display='none'
         });
-    } else if (window.innerWidth >= 912) {
+    } else if (window.innerWidth >= 600 &&window.innerWidth <= 912) {
         const lastItem = categoriesButtonArray[categoriesButtonArray.length - 1];
         lastItem.innerHTML = `<i class='bx bx-chevron-right' style="font-size: 25px; width: 25px; height: 25px; color: black"></i>`;
+    } else if (window.innerWidth >= 913 ){
+        const categoriesSubset = categoriesButtonArray.slice(categoriesButtonArray.length -2, categoriesButtonArray.length);
+        categoriesSubset.forEach(data => {
+            
+            data.style.display='none'
+        });
     }
-
-   
 }
 
 window.addEventListener('DOMContentLoaded', Carousel);
@@ -129,23 +131,107 @@ function toggleSidebar () {
     const content = qsa('.container')
     const navside = qs('#nav-side')
     const header = qs('#header')
-    const closeBtn = qs('#close-btn')
+    const closeBtn = qs('#close-btn');
+   
+    const icon = `<li class="list-item active">
+                        <a href="">
+                           <yt-icon id="icon" class="guide-icon style-scope ytd-mini-guide-entry-renderer"><!--css-build:shady--><!--css-build:shady--><span class="yt-icon-shape yt-spec-icon-shape"><div style="width: 100%; height: 100%; display: block; fill: currentcolor;" bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true" style="pointer-events: none; display: inherit; width: 100%; height: 100%;"><path d="m11 7 6 3.5-6 3.5V7zm7 13H4V6H3v15h15v-1zm3-2H6V3h15v15zM7 17h13V4H7v13z"></path></svg></div></span></yt-icon>
+                            <span class="link-name" style="--i:1">Bạn</span>
+                        </a>
+                    </li>`
 
-    toggleBtn.addEventListener('click', () => {
-        if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+    const listItem = qsa('.list-item');
+    const listItemArray = Array.from(listItem);
+        listItemArray.forEach((item, index) => {
+            if (index >= 4) {
+                item.style.display = 'none';
+            } else if(index === 3 && !sidebar.classList.remove('active')){
+                item.innerHTML = icon;
+            }
+        });
+
+
+
+    window.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.querySelector('.sidebar');
+    if (sidebar) {
+        sidebar.classList.add('active');
+    }
+});
+    
+    toggleBtn.addEventListener('click', () => { 
+
+        if (window.innerWidth >= 768 && window.innerWidth <= 1280) {
             navside.classList.add('positive')
             // main.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
             closeBtn.addEventListener('click', () => {
                 navside.classList.remove('positive')
             })
         } else {
+            sidebar.classList.toggle('active')
 
-            sidebar.classList.toggle('active');
+            if (sidebar.classList.contains('active')) {
+                listItemArray.forEach(item => item.style.display = 'block');
+            } else {
+                listItemArray.forEach((item, index) => {
+                    if (index >= 4) {
+                        item.style.display = 'none';
+                    }
+                });
+            
+            }
+           
             contentBody.classList.toggle('active');
-            content.classList.toggle('active');
+           Array.from(content).map((data) => {
+            data.classList.toggle('positive');
+           })
             header.classList.toggle('active');
         }
     })
+}
 
-    
+// Fetch API from Yotube
+window.addEventListener('DOMContentLoaded', getVideoYoutube)
+// async function getVideoYoutube() {
+//     const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns`;
+//     const data = await fetch(url);
+
+//     if (!data.ok) {
+//         return `The status ${data.status}`;
+//     }
+
+//     return data.json();
+// }
+
+function getVideoYoutube() {
+
+    const heading = qsa('.video-heading');
+    const itemImages = qsa('.item-image');
+    const videoSite = qs('.video-site')
+  
+    // const videoSite
+
+
+    const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns`;
+    fetch(url)
+    .then(res => res.json())
+    .then(data => {
+        data.items.forEach((el, index) => {
+            if (heading[index] && itemImages[index]) {
+                itemImages[index].src = el.snippet.thumbnails.maxres.url;
+                heading[index].innerHTML = el.snippet.title;
+                // videoSite[index].src= `https://www.youtube.com/embed/${el.snippet.resourceId.videoId}`;
+            }
+        });
+        // console.log(data.items[0]);
+    })
+    .catch(error => {
+        console.log(error);
+    })
+
+    // if (!data.ok) {
+    //     return `The status ${data.status}`;
+    // }
+
+    // return data.json();
 }

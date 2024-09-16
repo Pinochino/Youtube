@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://www.youtube.com/s/desktop/b517a508/img/favicon.ico">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <div class="header-left">
                 <span class="menu-icon"><i class="fa-solid fa-bars"></i></span>
                 <div class="logo">
-                   <a href="./home.html">
+                    <a href="./home.html">
                         <svg xmlns="http://www.w3.org/2000/svg" id="yt-logo-updated-svg_yt9" class="external-icon"
                             viewBox="0 0 90 20" focusable="false" aria-hidden="true"
                             style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
@@ -30,7 +31,8 @@
                                     <path
                                         d="M27.9727 3.12324C27.6435 1.89323 26.6768 0.926623 25.4468 0.597366C23.2197 2.24288e-07 14.285 0 14.285 0C14.285 0 5.35042 2.24288e-07 3.12323 0.597366C1.89323 0.926623 0.926623 1.89323 0.597366 3.12324C2.24288e-07 5.35042 0 10 0 10C0 10 2.24288e-07 14.6496 0.597366 16.8768C0.926623 18.1068 1.89323 19.0734 3.12323 19.4026C5.35042 20 14.285 20 14.285 20C14.285 20 23.2197 20 25.4468 19.4026C26.6768 19.0734 27.6435 18.1068 27.9727 16.8768C28.5701 14.6496 28.5701 10 28.5701 10C28.5701 10 28.5677 5.35042 27.9727 3.12324Z"
                                         fill="#FF0000"></path>
-                                    <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white"></path>
+                                    <path d="M11.4253 14.2854L18.8477 10.0004L11.4253 5.71533V14.2854Z" fill="white">
+                                    </path>
                                 </g>
                                 <g>
                                     <g id="youtube-paths_yt9">
@@ -59,7 +61,7 @@
                                 </g>
                             </svg>
                         </svg>
-                   </a>
+                    </a>
                 </div>
             </div>
 
@@ -84,11 +86,11 @@
             <div class="wrapper-body">
                 <div class="video">
                     <!-- 815 481 -->
-                    <iframe width="auto" height="auto" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    <iframe class="video-site" width="auto" height="auto"
+                        src="">
                     </iframe>
 
-                    <h2 class="video-heading">Create A Draggable Image Slider in HTML CSS & JavaScript | Mobile Friendly
-                        Slider in JavaScript</h2>
+                    <h2 class="video-heading"></h2>
 
                     <div class="wrapper-video">
                         <div class="channel">
@@ -179,352 +181,387 @@
 
                     </div>
 
-                   
+
                 </div>
 
+                <!-- <span class="loader"></span> -->
 
 
-
-            <div class="video-left">
-                <div class="chips">
-                    <button class="category-button active">Tất cả</button>
-                    <button class="category-button">Âm nhạc</button>
-                    <button class="category-button">Danh sách kết hợp</button>
-                    <button class="category-button"><i class='bx bx-chevron-right'
-                            style="font-size: 25px; width: 25px; height: 25px; color: black"></i></button>
-                </div>
-
-                <div class="detail">
-                    <img src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
-                        alt="">
-                    <div class="detail-content">
-                        <div class="detail-content-head">
-                            <h3>CSS Grid trong 30 phút (2022)</h3>
-                            <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                    class="style-scope ytd-menu-renderer"><span
-                                        class="yt-icon-shape yt-spec-icon-shape">
-                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
-                                                width="24" focusable="false" aria-hidden="true"
-                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                <path
-                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                </path>
-                                            </svg></div>
-                                    </span></yt-icon></button>
-                        </div>
-                        <p>Play-By-Ear Pianist</p>
-                        <p>317n nguoi xem</p>
+                <div class="video-left">
+                    <div class="chips">
+                        <button class="category-button active">Tất cả</button>
+                        <button class="category-button">Âm nhạc</button>
+                        <button class="category-button">Danh sách kết hợp</button>
+                        <button class="category-button"><i class='bx bx-chevron-right'
+                                style="font-size: 25px; width: 25px; height: 25px; color: black"></i></button>
                     </div>
-                </div>
 
-                <div class="short">
-                    <div class="short-head">
-                        <div class="short-icon">
-                            <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" focusable="false" aria-hidden="true"
-                                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                    <g>
-                                        <path
-                                            d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z"
-                                            fill="red"></path>
-                                        <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
-                                    </g>
-                                </svg></div>
-                        </div>
-                        <span>Shorts</span>
-                    </div>
-                    <div class="wrapper">
-                        <div class="carousel">
-                            <i id="left" class="fa-solid fa-angle-left"></i>
-                            <div class="card">
-                                <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
-                                    alt="">
-                                <div class="short-infor">
-                                    <div class="detail-content-head">
-                                        <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano</h5>
-
-                                        <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                                class="style-scope ytd-menu-renderer"><span
-                                                    class="yt-icon-shape yt-spec-icon-shape">
-                                                    <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                        bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            enable-background="new 0 0 24 24" height="24"
-                                                            viewBox="0 0 24 24" width="24" focusable="false"
-                                                            aria-hidden="true"
-                                                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                            <path
-                                                                d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                            </path>
-                                                        </svg></div>
-                                                </span></yt-icon></button>
-                                    </div>
-                                    <p>129n luot xem</p>
-                                </div>
-
+                    <div class="detail">
+                        <img class="item-image"
+                            src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
+                            alt="">
+                        <div class="detail-content">
+                            <div class="detail-content-head">
+                                <h3 class="video-heading"> Grid trong 30 phút (2022)</h3>
+                                <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                        class="style-scope ytd-menu-renderer"><span
+                                            class="yt-icon-shape yt-spec-icon-shape">
+                                            <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
+                                                    width="24" focusable="false" aria-hidden="true"
+                                                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                    <path
+                                                        d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                    </path>
+                                                </svg></div>
+                                        </span></yt-icon></button>
                             </div>
-                            <div class="card">
-                                <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
-                                    alt="">
-                                <div class="short-infor">
-                                    <div class="detail-content-head">
-                                        <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano</h5>
-                                        <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                                class="style-scope ytd-menu-renderer"><span
-                                                    class="yt-icon-shape yt-spec-icon-shape">
-                                                    <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                        bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            enable-background="new 0 0 24 24" height="24"
-                                                            viewBox="0 0 24 24" width="24" focusable="false"
-                                                            aria-hidden="true"
-                                                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                            <path
-                                                                d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                            </path>
-                                                        </svg></div>
-                                                </span></yt-icon></button>
-                                    </div>
-                                    <p>129n luot xem</p>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
-                                    alt="">
-                                <div class="short-infor">
-
-                                    <div class="detail-content-head">
-                                        <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano</h5>
-                                        <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                                class="style-scope ytd-menu-renderer"><span
-                                                    class="yt-icon-shape yt-spec-icon-shape">
-                                                    <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                        bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            enable-background="new 0 0 24 24" height="24"
-                                                            viewBox="0 0 24 24" width="24" focusable="false"
-                                                            aria-hidden="true"
-                                                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                            <path
-                                                                d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                            </path>
-                                                        </svg></div>
-                                                </span></yt-icon></button>
-                                    </div>
-                                    <p>129n luot xem</p>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
-                                    alt="">
-                                <div class="short-infor">
-
-                                    <div class="detail-content-head">
-                                        <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano</h5>
-                                        <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                                class="style-scope ytd-menu-renderer"><span
-                                                    class="yt-icon-shape yt-spec-icon-shape">
-                                                    <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                        bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            enable-background="new 0 0 24 24" height="24"
-                                                            viewBox="0 0 24 24" width="24" focusable="false"
-                                                            aria-hidden="true"
-                                                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                            <path
-                                                                d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                            </path>
-                                                        </svg></div>
-                                                </span></yt-icon></button>
-                                    </div>
-                                    <p>129n luot xem</p>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
-                                    alt="">
-                                <div class="short-infor">
-
-                                    <div class="detail-content-head">
-                                        <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano</h5>
-                                        <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                                class="style-scope ytd-menu-renderer"><span
-                                                    class="yt-icon-shape yt-spec-icon-shape">
-                                                    <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                        bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            enable-background="new 0 0 24 24" height="24"
-                                                            viewBox="0 0 24 24" width="24" focusable="false"
-                                                            aria-hidden="true"
-                                                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                            <path
-                                                                d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                            </path>
-                                                        </svg></div>
-                                                </span></yt-icon></button>
-                                    </div>
-                                    <p>129n luot xem</p>
-                                </div>
-
-                            </div>
-                            <div class="card">
-                                <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
-                                    alt="">
-                                <div class="short-infor">
-
-                                    <div class="detail-content-head">
-                                        <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano</h5>
-                                        <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                                class="style-scope ytd-menu-renderer"><span
-                                                    class="yt-icon-shape yt-spec-icon-shape">
-                                                    <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                        bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                            enable-background="new 0 0 24 24" height="24"
-                                                            viewBox="0 0 24 24" width="24" focusable="false"
-                                                            aria-hidden="true"
-                                                            style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                            <path
-                                                                d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                            </path>
-                                                        </svg></div>
-                                                </span></yt-icon></button>
-                                    </div>
-                                    <p>129n luot xem</p>
-                                </div>
-
-                            </div>
-
-
-                            <i id="right" class="fa-solid fa-angle-right"></i>
+                            <p>Play-By-Ear Pianist</p>
+                            <p>317n nguoi xem</p>
                         </div>
                     </div>
-                    <!-- <div class="wrapper">
+
+                    <div class="short">
+                        <div class="short-head">
+                            <div class="short-icon">
+                                <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                    bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" focusable="false" aria-hidden="true"
+                                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                        <g>
+                                            <path
+                                                d="M17.77,10.32l-1.2-.5L18,9.06a3.74,3.74,0,0,0-3.5-6.62L6,6.94a3.74,3.74,0,0,0,.23,6.74l1.2.49L6,14.93a3.75,3.75,0,0,0,3.5,6.63l8.5-4.5a3.74,3.74,0,0,0-.23-6.74Z"
+                                                fill="red"></path>
+                                            <polygon points="10 14.65 15 12 10 9.35 10 14.65" fill="#fff"></polygon>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                            <span>Shorts</span>
+                        </div>
+                        <div class="wrapper">
+                            <div class="carousel">
+                                <i id="left" class="fa-solid fa-angle-left"></i>
+                                <div class="card">
+                                    <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                        alt="">
+                                    <div class="short-infor">
+                                        <div class="detail-content-head">
+                                            <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano
+                                            </h5>
+
+                                            <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                                    class="style-scope ytd-menu-renderer"><span
+                                                        class="yt-icon-shape yt-spec-icon-shape">
+                                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                enable-background="new 0 0 24 24" height="24"
+                                                                viewBox="0 0 24 24" width="24" focusable="false"
+                                                                aria-hidden="true"
+                                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                                <path
+                                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                                </path>
+                                                            </svg></div>
+                                                    </span></yt-icon></button>
+                                        </div>
+                                        <p>129n luot xem</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                        alt="">
+                                    <div class="short-infor">
+                                        <div class="detail-content-head">
+                                            <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano
+                                            </h5>
+                                            <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                                    class="style-scope ytd-menu-renderer"><span
+                                                        class="yt-icon-shape yt-spec-icon-shape">
+                                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                enable-background="new 0 0 24 24" height="24"
+                                                                viewBox="0 0 24 24" width="24" focusable="false"
+                                                                aria-hidden="true"
+                                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                                <path
+                                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                                </path>
+                                                            </svg></div>
+                                                    </span></yt-icon></button>
+                                        </div>
+                                        <p>129n luot xem</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                        alt="">
+                                    <div class="short-infor">
+
+                                        <div class="detail-content-head">
+                                            <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano
+                                            </h5>
+                                            <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                                    class="style-scope ytd-menu-renderer"><span
+                                                        class="yt-icon-shape yt-spec-icon-shape">
+                                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                enable-background="new 0 0 24 24" height="24"
+                                                                viewBox="0 0 24 24" width="24" focusable="false"
+                                                                aria-hidden="true"
+                                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                                <path
+                                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                                </path>
+                                                            </svg></div>
+                                                    </span></yt-icon></button>
+                                        </div>
+                                        <p>129n luot xem</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                        alt="">
+                                    <div class="short-infor">
+
+                                        <div class="detail-content-head">
+                                            <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano
+                                            </h5>
+                                            <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                                    class="style-scope ytd-menu-renderer"><span
+                                                        class="yt-icon-shape yt-spec-icon-shape">
+                                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                enable-background="new 0 0 24 24" height="24"
+                                                                viewBox="0 0 24 24" width="24" focusable="false"
+                                                                aria-hidden="true"
+                                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                                <path
+                                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                                </path>
+                                                            </svg></div>
+                                                    </span></yt-icon></button>
+                                        </div>
+                                        <p>129n luot xem</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                        alt="">
+                                    <div class="short-infor">
+
+                                        <div class="detail-content-head">
+                                            <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano
+                                            </h5>
+                                            <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                                    class="style-scope ytd-menu-renderer"><span
+                                                        class="yt-icon-shape yt-spec-icon-shape">
+                                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                enable-background="new 0 0 24 24" height="24"
+                                                                viewBox="0 0 24 24" width="24" focusable="false"
+                                                                aria-hidden="true"
+                                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                                <path
+                                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                                </path>
+                                                            </svg></div>
+                                                    </span></yt-icon></button>
+                                        </div>
+                                        <p>129n luot xem</p>
+                                    </div>
+
+                                </div>
+                                <div class="card">
+                                    <img class="item-image"
+                                        src="https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                        alt="">
+                                    <div class="short-infor">
+
+                                        <div class="detail-content-head">
+                                            <h5>旅 風立ちぬ 🌻 A Journey The Wind Rises #ghiblimusic #bgmghiblistudio #piano
+                                            </h5>
+                                            <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                                    class="style-scope ytd-menu-renderer"><span
+                                                        class="yt-icon-shape yt-spec-icon-shape">
+                                                        <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                            bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                enable-background="new 0 0 24 24" height="24"
+                                                                viewBox="0 0 24 24" width="24" focusable="false"
+                                                                aria-hidden="true"
+                                                                style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                                <path
+                                                                    d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                                </path>
+                                                            </svg></div>
+                                                    </span></yt-icon></button>
+                                        </div>
+                                        <p>129n luot xem</p>
+                                    </div>
+
+                                </div>
+
+
+                                <i id="right" class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- <div class="wrapper">
 
                             <i id="left" class="fa-solid fa-angle-left"></i>
                             <div class="carousel">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
-                                <img src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
+                                <img class="item-image"src=https://i.ytimg.com/vi/wwG8-bWWCz8/oar2.jpg?sqp=-oaymwEqCJUDENAFSFqQAgHyq4qpAxkIARUAAIhC2AEB4gEMCBYQAhgGIAE4AUAB&rs=AOn4CLC8baLjP1b-dCWWf5il4NuvlJRlXg"
                                     alt="">
                             </div>
                             <i id="right" class="fa-solid fa-angle-right"></i>
                         </div> -->
 
 
-                </div>
-                <div>
-                    <div class="detail">
-                        <img src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
-                            alt="">
-                        <div class="detail-content">
-                            <div class="detail-content-head">
-                                <h3>CSS Grid trong 30 phút (2022)</h3>
-                                <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                        class="style-scope ytd-menu-renderer"><span
-                                            class="yt-icon-shape yt-spec-icon-shape">
-                                            <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
-                                                    width="24" focusable="false" aria-hidden="true"
-                                                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                    <path
-                                                        d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                    </path>
-                                                </svg></div>
-                                        </span></yt-icon></button>
-                            </div>
-                            <p>Play-By-Ear Pianist</p>
-                            <p>317n nguoi xem <span class="my-circle">&#9679;</span> 22h trước</p>
-                        </div>
                     </div>
-                    <div class="detail">
-                        <img src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
-                            alt="">
-                        <div class="detail-content">
-                            <div class="detail-content-head">
-                                <h3>CSS Grid trong 30 phút (2022)</h3>
-                                <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                        class="style-scope ytd-menu-renderer"><span
-                                            class="yt-icon-shape yt-spec-icon-shape">
-                                            <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
-                                                    width="24" focusable="false" aria-hidden="true"
-                                                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                    <path
-                                                        d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                    </path>
-                                                </svg></div>
-                                        </span></yt-icon></button>
+                    <div>
+                        <div class="detail">
+                            <img class="item-image"
+                                src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
+                                alt="">
+                            <div class="detail-content">
+                                <div class="detail-content-head">
+                                    <h3 class="video-heading"> Grid trong 30 phút (2022)</h3>
+                                    <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                            class="style-scope ytd-menu-renderer"><span
+                                                class="yt-icon-shape yt-spec-icon-shape">
+                                                <div style="width: 1rem; height: 1rem; display: block; fill: currentcolor;"
+                                                    bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        enable-background="new 0 0 24 24" height="24"
+                                                        viewBox="0 0 24 24" width="24" focusable="false"
+                                                        aria-hidden="true"
+                                                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                        <path
+                                                            d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                        </path>
+                                                    </svg></div>
+                                            </span></yt-icon></button>
+                                </div>
+                                <p>Play-By-Ear Pianist</p>
+                                <p>317n nguoi xem <span class="my-circle">&#9679;</span> 22h trước</p>
                             </div>
-                            <p>Play-By-Ear Pianist</p>
-                            <p>317n nguoi xem</p>
                         </div>
-                    </div>
-                    <div class="detail">
-                        <img src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
-                            alt="">
-                        <div class="detail-content">
-                            <div class="detail-content-head">
-                                <h3>CSS Grid trong 30 phút (2022)</h3>
-                                <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                        class="style-scope ytd-menu-renderer"><span
-                                            class="yt-icon-shape yt-spec-icon-shape">
-                                            <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
-                                                    width="24" focusable="false" aria-hidden="true"
-                                                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                    <path
-                                                        d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                    </path>
-                                                </svg></div>
-                                        </span></yt-icon></button>
+                        <div class="detail">
+                            <img class="item-image"
+                                src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
+                                alt="">
+                            <div class="detail-content">
+                                <div class="detail-content-head">
+                                    <h3 class="video-heading"> Grid trong 30 phút (2022)</h3>
+                                    <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                            class="style-scope ytd-menu-renderer"><span
+                                                class="yt-icon-shape yt-spec-icon-shape">
+                                                <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                    bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        enable-background="new 0 0 24 24" height="24"
+                                                        viewBox="0 0 24 24" width="24" focusable="false"
+                                                        aria-hidden="true"
+                                                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                        <path
+                                                            d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                        </path>
+                                                    </svg></div>
+                                            </span></yt-icon></button>
+                                </div>
+                                <p>Play-By-Ear Pianist</p>
+                                <p>317n nguoi xem</p>
                             </div>
-                            <p>Play-By-Ear Pianist</p>
-                            <p>317n nguoi xem</p>
                         </div>
-                    </div>
-                    <div class="detail">
-                        <img src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
-                            alt="">
-                        <div class="detail-content">
-                            <div class="detail-content-head">
-                                <h3>CSS Grid trong 30 phút (2022)</h3>
-                                <button id="button" class="style-scope yt-icon-button"><yt-icon
-                                        class="style-scope ytd-menu-renderer"><span
-                                            class="yt-icon-shape yt-spec-icon-shape">
-                                            <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
-                                                bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    enable-background="new 0 0 24 24" height="24" viewBox="0 0 24 24"
-                                                    width="24" focusable="false" aria-hidden="true"
-                                                    style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
-                                                    <path
-                                                        d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
-                                                    </path>
-                                                </svg></div>
-                                        </span></yt-icon></button>
+                        <div class="detail">
+                            <img class="item-image"
+                                src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
+                                alt="">
+                            <div class="detail-content">
+                                <div class="detail-content-head">
+                                    <h3 class="video-heading"> Grid trong 30 phút (2022)</h3>
+                                    <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                            class="style-scope ytd-menu-renderer"><span
+                                                class="yt-icon-shape yt-spec-icon-shape">
+                                                <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                    bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        enable-background="new 0 0 24 24" height="24"
+                                                        viewBox="0 0 24 24" width="24" focusable="false"
+                                                        aria-hidden="true"
+                                                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                        <path
+                                                            d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                        </path>
+                                                    </svg></div>
+                                            </span></yt-icon></button>
+                                </div>
+                                <p>Play-By-Ear Pianist</p>
+                                <p>317n nguoi xem</p>
                             </div>
-                            <p>Play-By-Ear Pianist</p>
-                            <p>317n nguoi xem</p>
+                        </div>
+                        <div class="detail">
+                            <img class="item-image"
+                                src="https://i.ytimg.com/vi/h17OhSPD6Nw/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCJf0OJymtCJkB5FMw22we-3abr2A"
+                                alt="">
+                            <div class="detail-content">
+                                <div class="detail-content-head">
+                                    <h3 class="video-heading"> Grid trong 30 phút (2022)</h3>
+                                    <button id="button" class="style-scope yt-icon-button"><yt-icon
+                                            class="style-scope ytd-menu-renderer"><span
+                                                class="yt-icon-shape yt-spec-icon-shape">
+                                                <div style="width: 100%; height: 100%; display: block; fill: currentcolor;"
+                                                    bis_skin_checked="1"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        enable-background="new 0 0 24 24" height="24"
+                                                        viewBox="0 0 24 24" width="24" focusable="false"
+                                                        aria-hidden="true"
+                                                        style="pointer-events: none; display: inherit; width: 100%; height: 100%;">
+                                                        <path
+                                                            d="M12 16.5c.83 0 1.5.67 1.5 1.5s-.67 1.5-1.5 1.5-1.5-.67-1.5-1.5.67-1.5 1.5-1.5zM10.5 12c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5zm0-6c0 .83.67 1.5 1.5 1.5s1.5-.67 1.5-1.5-.67-1.5-1.5-1.5-1.5.67-1.5 1.5z">
+                                                        </path>
+                                                    </svg></div>
+                                            </span></yt-icon></button>
+                                </div>
+                                <p>Play-By-Ear Pianist</p>
+                                <p>317n nguoi xem</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </main>
     </div>
-    </main>
-    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', getVideo)
+        function getVideo() {
+            const videoSite = qs('.video-site')
+
+            const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns`;
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    data.items.forEach((el, index) => {
+                            videoSite.src= `https://www.youtube.com/embed/${el.snippet.resourceId.videoId}`;
+                    });
+                    console.log(data.items[0]);
+                })
+                .catch(error => {
+                    console.log(error);
+                })
+        }
+    </script>
     <script src="/JS/main.js"></script>
 </body>
 
