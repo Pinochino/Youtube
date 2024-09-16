@@ -207,12 +207,8 @@ function getVideoYoutube() {
 
     const heading = qsa('.video-heading');
     const itemImages = qsa('.item-image');
-    const videoSite = qs('.video-site')
-  
-    // const videoSite
 
-
-    const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns`;
+    const url = `https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=84&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns`;
     fetch(url)
     .then(res => res.json())
     .then(data => {
@@ -220,18 +216,34 @@ function getVideoYoutube() {
             if (heading[index] && itemImages[index]) {
                 itemImages[index].src = el.snippet.thumbnails.maxres.url;
                 heading[index].innerHTML = el.snippet.title;
-                // videoSite[index].src= `https://www.youtube.com/embed/${el.snippet.resourceId.videoId}`;
             }
         });
-        // console.log(data.items[0]);
     })
     .catch(error => {
         console.log(error);
     })
+}
 
-    // if (!data.ok) {
-    //     return `The status ${data.status}`;
-    // }
 
-    // return data.json();
+window.addEventListener('DOMContentLoaded', getCommentYoutube)
+async function getCommentYoutube() {
+    const API_KEY = `AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns`;
+    const CHANEL_ID =  `dQw4w9WgXcQ`;
+    const commentText = qsa('.comment-text');
+
+    const url = `https://www.googleapis.com/youtube/v3/commentThreads?key=${API_KEY}&textFormat=plainText&part=snippet&videoId=${CHANEL_ID}&maxResults=20`
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        if (data.items && data.items.length > 0) {
+            data.items.forEach((el, index) => {
+                if (commentText[index]) {
+                    commentText[index].innerHTML = el.snippet.topLevelComment.snippet.textDisplay;
+                }
+            })
+        }
+       
+    } catch (error) {
+        console.error(`Error is: ${error}`)
+    }
 }

@@ -1,5 +1,6 @@
 api key: AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns
 
+video ID: dQw4w9WgXcQ
 
 upload id: UUAuUUnT6oDeKwE6v1NGQxug
 
@@ -8,6 +9,8 @@ channel id: UCAuUUnT6oDeKwE6v1NGQxug
 url: https://youtube.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=20&playlistId=UUAuUUnT6oDeKwE6v1NGQxug&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns
 
 https://www.youtube.com/watch?v=
+
+//youtube.googleapis.com/youtube/v3/comments?part=snippet&id=dQw4w9WgXcQ&key=AIzaSyAcLZkCSU8jXCoGGxPxWv4htPq2yZ3o-ns
 
 
 
