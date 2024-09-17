@@ -6,7 +6,8 @@
     box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -46,9 +47,11 @@ a {
     align-items: center;
     width: 100%;
 }
+
 .wrapper-body {
     margin-top: 6rem;
 }
+
 .header-left {
     display: inline-flex;
     align-items: center;
@@ -173,20 +176,22 @@ a {
 
 .sidebar.active {
     width: 257px;
-   
+
     min-height: 100vh;
 }
 
-.sidebar.active:hover{
+.sidebar.active:hover {
     overflow-y: auto;
 }
-.sidebar.active .list-item a{
+
+.sidebar.active .list-item a {
     height: 40px;
 }
 
-.sidebar.active .list-item a:hover{
+.sidebar.active .list-item a:hover {
     background-color: #F2F2F2;
 }
+
 .sidebar *::-webkit-scrollbar {
     border-radius: 0;
     width: 6px;
@@ -299,7 +304,7 @@ a {
 }
 
 
-.sidebar.active .list-item a .cirle-logo{
+.sidebar.active .list-item a .cirle-logo {
     width: 30px;
     height: 30px;
     margin-right: 1rem;
@@ -342,9 +347,9 @@ a {
 
 }
 
-.sidebar.active .list .list-item a .guide-icon{
+.sidebar.active .list .list-item a .guide-icon {
     margin-right: 1.5rem;
-    
+
 }
 
 .sidebar .list .list-item a i {
@@ -359,10 +364,13 @@ a {
     width: 160px;
     left: -250px;
     transition: left 0.3s ease-in-out;
+    overflow-y: scroll;
 }
-#nav-side .header-left{
+
+#nav-side .header-left {
     height: 7%;
 }
+
 #nav-side>* {
     margin-bottom: 1rem;
     background: #fff;
@@ -373,6 +381,18 @@ a {
     margin-right: 1.5rem;
 }
 
+#nav-side .mode-item .yt-icon-shape > div{
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    margin-right: 1.5rem;
+}
+#nav-side .mode-item{
+    display: flex;
+    align-items: center;
+}
+#nav-side .mode > .mode-item:not(:first-child){
+    margin: 0.8rem 0;
+}
 #nav-side .header-left {
     width: 100%;
     justify-content: center;
@@ -382,7 +402,7 @@ a {
     flex-wrap: nowrap;
     margin: 0;
     width: unset;
-    padding: 0 0.8rem;
+    padding: 0 0.5rem;
 }
 
 #nav-side {
@@ -582,16 +602,17 @@ html *::-webkit-scrollbar-track {
 .block-image {
     position: relative;
 }
+
 .container {
     display: none;
 }
 
-.icon-youtube{
+.icon-youtube {
     width: 30px;
 }
 
 
-.information{
+.information {
     display: block;
     line-height: 25px;
     padding: 0 10px;
@@ -599,11 +620,12 @@ html *::-webkit-scrollbar-track {
 
 
 
-.information, .infor-head > span{
+.information,
+.infor-head>span {
     font-size: 13px;
 }
 
-.infor-head > span{
+.infor-head>span {
     margin-right: 0.3rem;
 }
 
@@ -611,51 +633,52 @@ html *::-webkit-scrollbar-track {
     border-bottom: 1px solid #EEEEEE;
 }
 
-.container.positive{
+.container.positive {
     grid-template-columns: repeat(3, 1fr) !important;
     grid-template-rows: calc(22.75rem) !important;
 }
 
 
-.sidebar.active .link-name{
+.sidebar.active .link-name {
     font-size: 14px;
 }
 
-.sidebar .link-name{
+.sidebar .link-name {
     font-size: 10px;
 }
 
-.item-body-content > *{
+.item-body-content>* {
     line-height: 1.3rem;
 }
 
-.item-body-content > p {
+.item-body-content>p {
     font-size: 0.875rem;
-   display: -webkit-box;
-   -webkit-box-orient: vertical;
-   overflow: hidden;   
-   -webkit-line-clamp: 1;
-   text-overflow: ellipsis;
-   white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+    white-space: normal;
 }
 
-.sidebar .list-item{
+.sidebar .list-item {
     height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sidebar.active .list-item{
+
+.sidebar.active .list-item {
     height: 100%;
     display: block !important;
 }
 
-.sidebar.active .list-item:hover{
+.sidebar.active .list-item:hover {
     display: unset;
 }
-.sidebar .list-item:hover{
+
+.sidebar .list-item:hover {
     background-color: #F2F2F2;
     cursor: pointer;
     border-radius: 10px;
 }
-
